@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fieldframe is a calm, simple place to explore images by topic.">
+  <title>Fieldframe — Image Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#" aria-label="Fieldframe home">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>fieldframe<span class="brand-period">.</span></span>
+    </a>
+    <span class="header-note">A window into the world</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> YOUR VISUAL FIELD GUIDE</p>
+      <h1 id="page-title">Find a little<br><em>inspiration.</em></h1>
+      <p class="intro-copy">Search a subject, follow a curiosity, and imagine what’s out there. Your next visual discovery starts here.</p>
+    </section>
+
+    <section class="search-panel" aria-label="Image search">
+      <form id="search-form">
+        <label for="search-input">What would you like to explore?</label>
+        <div class="search-row">
+          <input id="search-input" name="query" type="search" placeholder="Try “quiet forests” or “coastal towns”" autocomplete="off">
+          <button id="search-button" type="submit"><span>Search</span><span aria-hidden="true">↗</span></button>
+        </div>
+      </form>
+      <div class="quick-picks" aria-label="Suggested topics">
+        <span class="quick-picks-label">A few starting points</span>
+        <button class="chip" type="button">Nature <span aria-hidden="true">↗</span></button>
+        <button class="chip" type="button">Architecture <span aria-hidden="true">↗</span></button>
+        <button class="chip" type="button">Ocean life <span aria-hidden="true">↗</span></button>
+        <button class="chip" type="button">Everyday moments <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+
+    <section class="results-section" aria-labelledby="results-heading">
+      <div class="results-heading-row">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2 id="results-heading">Your discoveries</h2>
+        </div>
+        <p id="result-count" class="result-count">0 images · ready when you are</p>
+      </div>
+
+      <div id="results" class="results-grid" aria-live="polite"></div>
+
+      <div id="empty-state" class="empty-state">
+        <div class="empty-art" aria-hidden="true">
+          <span class="sun"></span><span class="hill hill-back"></span><span class="hill hill-front"></span>
+          <span class="tiny-star star-one">✳</span><span class="tiny-star star-two">✳</span>
+        </div>
+        <h3>Your next discovery is waiting.</h3>
+        <p>Enter a topic above to make this space your own.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>FIELD FRAME / VISUAL CURIOSITY</span>
+    <span>Made for the things you want to see.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
